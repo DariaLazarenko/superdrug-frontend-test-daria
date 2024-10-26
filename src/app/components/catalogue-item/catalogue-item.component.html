@@ -1,17 +1,23 @@
-<div *ngIf="item" class="component-container">
-  <div class="image">
-    <img [src]="item.image" [alt]="item.title" />
-  </div>
-  <div class="details">
-    <h3 class="title">{{ item.title }}</h3>
-    <p class="category">{{ item.category }}</p>
-    <p class="price">£{{ item.price | number : "1.2-2" }}</p>
-    <!-- Too long for a card -->
-    <!-- <p class="description">{{ item.description }}</p> -->
-    <div class="rating">
-      <span class="rating-rate">Rating: {{ item.rating.rate }}/5</span>
-      <span class="rating-count">({{ item.rating.count }} reviews)</span>
+<div class="component-container">
+  <ng-container *ngIf="item">
+    <div class="image">
+      <img [src]="item.image" [alt]="item.title" />
     </div>
-    <button class="button">Add to Basket</button>
-  </div>
+    <div class="details">
+      <h3 class="title">{{ item.title }}</h3>
+      <p class="category">{{ item.category }}</p>
+      <p class="price">£{{ item.price | number : "1.2-2" }}</p>
+      <!-- Too long for a card -->
+      <!-- <p class="description">{{ item.description }}</p> -->
+      <div class="rating">
+        <span class="rating-rate">Rating: {{ item.rating.rate }}/5</span>
+        <span class="rating-count">({{ item.rating.count }} reviews)</span>
+      </div>
+      <button class="button">Add to Basket</button>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="!item">
+    <p>Item not found</p>
+  </ng-container>
 </div>
