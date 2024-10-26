@@ -5,7 +5,7 @@ import { BehaviorSubject, combineLatest, finalize, map } from 'rxjs';
 import {
   CatalogueItem,
   CatalogueItemCategory,
-} from '../../models/catalogue-item.module';
+} from '../../models/catalogue-item.model';
 import { CatalogueItemComponent } from '../catalogue-item/catalogue-item.component';
 import { CatalogueFilterComponent } from '../catalogue-filter/catalogue-filter.component';
 

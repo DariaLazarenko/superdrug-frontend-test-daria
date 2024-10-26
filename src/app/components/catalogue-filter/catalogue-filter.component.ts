@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
-import { CatalogueItemCategory } from '../../models/catalogue-item.module';
+import { CatalogueItemCategory } from '../../models/catalogue-item.model';
 import { CommonModule } from '@angular/common';
 
 interface CategoryOption {

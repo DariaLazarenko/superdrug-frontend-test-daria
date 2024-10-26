@@ -3,7 +3,7 @@ import { CatalogueItemComponent } from './catalogue-item.component';
 import {
   CatalogueItem,
   CatalogueItemCategory,
-} from '../../models/catalogue-item.module';
+} from '../../models/catalogue-item.model';
 
 describe('CatalogueItemComponent', () => {
   let component: CatalogueItemComponent;

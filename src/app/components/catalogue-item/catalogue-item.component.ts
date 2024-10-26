@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CatalogueItem } from '../../models/catalogue-item.module';
+import { CatalogueItem } from '../../models/catalogue-item.model';
 import { CommonModule } from '@angular/common';
 
 @Component({

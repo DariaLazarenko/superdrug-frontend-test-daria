@@ -7,7 +7,7 @@ import { CatalogueService } from './catalogue.service';
 import {
   CatalogueItem,
   CatalogueItemCategory,
-} from '../models/catalogue-item.module';
+} from '../models/catalogue-item.model';
 
 describe('CatalogueService', () => {
   let service: CatalogueService;

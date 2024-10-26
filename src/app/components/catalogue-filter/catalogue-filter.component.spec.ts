@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CatalogueFilterComponent } from './catalogue-filter.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CatalogueItemCategory } from '../../models/catalogue-item.module';
+import { CatalogueItemCategory } from '../../models/catalogue-item.model';
 import { By } from '@angular/platform-browser';
 
 describe('CatalogueFilterComponent', () => {

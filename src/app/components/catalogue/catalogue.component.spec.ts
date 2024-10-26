@@ -5,7 +5,7 @@ import { of } from 'rxjs';
 import {
   CatalogueItem,
   CatalogueItemCategory,
-} from '../../models/catalogue-item.module';
+} from '../../models/catalogue-item.model';
 
 describe('CatalogueComponent', () => {
   let component: CatalogueComponent;
