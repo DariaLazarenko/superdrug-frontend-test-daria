@@ -1,7 +1,8 @@
 <div class="component-container">
   <ng-container *ngIf="item">
     <div class="image">
-      <img [src]="item.image" [alt]="item.title" />
+      <div *ngIf="!item.image" class="no-image">No image</div>
+      <img *ngIf="item.image" [src]="item.image" [alt]="item.title" />
     </div>
     <div class="details">
       <h3 class="title">{{ item.title }}</h3>

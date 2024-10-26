@@ -50,6 +50,10 @@ $desktop: 1024px;
     height: $card-size-desktop;
   }
 
+  .no-image {
+    margin: auto;
+  }
+
   img {
     position: absolute;
     max-width: 100%;
