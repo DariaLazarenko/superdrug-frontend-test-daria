@@ -31,7 +31,8 @@ It was generated with [Angular CLI](https://github.com/angular/angular-cli) vers
 - Dedicated service for data fetching
 - Strong typing with custom interfaces and enums
 - Reactive Forms for filter implementation
-- RxJS state management for loading scenario
+- RxJS state management for loading scenario and data setting
+- Derived filtered items from filter option and init data for immediate response
 - Accessible keyboard navigation
 - Alt text implementation for images
 - Unit tests that cover key functionality
