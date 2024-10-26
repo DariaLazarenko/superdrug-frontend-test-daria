@@ -50,9 +50,14 @@ export class CatalogueComponent implements OnInit {
     this.catalogueService
       .getCatalogueItems()
       .pipe(finalize(() => this._loading$.next(false)))
-      .subscribe((data) => {
-        if (!data?.length) return;
-        this._catalogueItems$.next(data);
+      .subscribe({
+        next: (data) => {
+          if (!data?.length) return;
+          this._catalogueItems$.next(data);
+        },
+        error: (error) => {
+          console.error('Failed to load catalogue items:', error);
+        },
       });
   }
 
