@@ -37,6 +37,13 @@ It was generated with [Angular CLI](https://github.com/angular/angular-cli) vers
 - Unit tests that cover key functionality
 - Proper handling of different image sizes
 
+### What I would improve
+
+- Add e2e tests for even better test coverage and to test how application works as a whole
+- Add 'Basket' logic using NgRx library to handle its state: adding/removing items
+- Add separate page for catalogue items to display more information about the item (e.g. description)
+- More diverce filtering/sorting capabilities
+
 ## 💻 Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
