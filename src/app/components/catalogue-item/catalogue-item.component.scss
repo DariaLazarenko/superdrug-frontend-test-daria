@@ -1,13 +1,12 @@
 $primary-color: #ee2e7b;
-$text-color: #333;
-$border-radius: 8px;
+$border-radius: 0.5rem;
 
-$card-size-mobile: 160px;
-$card-size-tablet: 200px;
-$card-size-desktop: 220px;
+$card-size-mobile: 10rem;
+$card-size-tablet: 12.5rem;
+$card-size-desktop: 13.75rem;
 
-$tablet: 768px;
-$desktop: 1024px;
+$tablet: 48rem;
+$desktop: 64rem;
 
 .component-container {
   background: white;
@@ -78,7 +77,7 @@ $desktop: 1024px;
   line-height: 1.4;
   font-weight: 600;
   margin: 0 0 0.5rem;
-  color: $text-color;
+  color: #333;
   line-clamp: 2;
   -webkit-line-clamp: 2;
   overflow: hidden;

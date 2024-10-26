@@ -1,11 +1,10 @@
 $primary-color: #ee2e7b;
-$text-color: #333;
 
 .component-container {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 16px;
+  gap: 0.75rem;
+  padding: 1rem;
   background-color: white;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
@@ -14,16 +13,16 @@ $text-color: #333;
 label {
   font-weight: 600;
   color: #333;
-  min-width: 80px;
+  min-width: 5rem;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .category-select {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  font-size: 14px;
-  min-width: 200px;
+  font-size: 0.875rem;
+  min-width: 12.5rem;
   cursor: pointer;
   transition: border-color 0.2s;
   color: #333;

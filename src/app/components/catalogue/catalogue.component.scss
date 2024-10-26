@@ -1,5 +1,9 @@
-$tablet: 768px;
-$desktop: 1024px;
+$tablet: 48rem;
+$desktop: 64rem;
+
+$card-size-mobile: 10rem;
+$card-size-tablet: 12.5rem;
+$card-size-desktop: 13.75rem;
 
 .component-container {
   height: 100%;
@@ -33,16 +37,16 @@ $desktop: 1024px;
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax($card-size-mobile, 1fr));
   gap: 0.75rem;
   padding: 0.75rem;
   min-width: 0;
 
   @media (min-width: $tablet) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax($card-size-tablet, 1fr));
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax($card-size-desktop, 1fr));
   }
 }
