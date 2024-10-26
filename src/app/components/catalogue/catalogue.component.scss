@@ -2,6 +2,23 @@ $tablet: 768px;
 $desktop: 1024px;
 
 .component-container {
+  height: 100%;
+  min-width: 0;
+}
+
+.empty-state {
+  height: 100%;
+  width: 100%;
+
+  background-color: lighten(lightpink, 10%);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 0.75rem;

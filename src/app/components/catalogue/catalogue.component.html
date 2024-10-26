@@ -1,6 +1,20 @@
 <div class="component-container">
-  <app-catalogue-item
-    *ngFor="let item of catalogueItems$ | async"
-    [item]="item"
-  ></app-catalogue-item>
+  <ng-container *ngIf="loading$ | async">
+    <div class="empty-state">
+      <h1 class="empty-state-text">Loading items...</h1>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="!(loading$ | async)">
+    <div *ngIf="!(catalogueItems$ | async)?.length" class="empty-state">
+      <h1 class="empty-state-text">Items not found</h1>
+    </div>
+
+    <div *ngIf="(catalogueItems$ | async)?.length" class="grid">
+      <app-catalogue-item
+        *ngFor="let item of catalogueItems$ | async"
+        [item]="item"
+      ></app-catalogue-item>
+    </div>
+  </ng-container>
 </div>
