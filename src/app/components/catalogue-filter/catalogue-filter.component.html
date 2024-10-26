@@ -1,0 +1,8 @@
+<div class="component-container" [formGroup]="filterForm">
+  <label for="category">Category:</label>
+  <select formControlName="category" class="category-select">
+    <option *ngFor="let option of categoryOptions" [value]="option.value">
+      {{ option.label }}
+    </option>
+  </select>
+</div>

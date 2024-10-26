@@ -1,0 +1,39 @@
+$primary-color: #ee2e7b;
+$text-color: #333;
+
+.component-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  min-width: 80px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.category-select {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 200px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  color: #333;
+}
+
+.category-select:hover {
+  border-color: $primary-color;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: $primary-color;
+}
