@@ -1,0 +1,6 @@
+<div class="component-container">
+  <app-catalogue-item
+    *ngFor="let item of catalogueItems$ | async"
+    [item]="item"
+  ></app-catalogue-item>
+</div>

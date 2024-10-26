@@ -1,0 +1,19 @@
+$tablet: 768px;
+$desktop: 1024px;
+
+.component-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
