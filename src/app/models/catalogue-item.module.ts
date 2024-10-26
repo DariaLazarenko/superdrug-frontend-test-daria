@@ -1,6 +1,6 @@
 export interface CatalogueItem {
   id: number;
-  category: string;
+  category: CatalogueItemCategory;
   title: string;
   description: string;
   image: string;
@@ -11,4 +11,12 @@ export interface CatalogueItem {
 export interface CatalogueItemRating {
   rate: number;
   count: number;
+}
+
+export enum CatalogueItemCategory {
+  All = 'all',
+  MenClothing = "men's clothing",
+  WomenClothing = "women's clothing",
+  Jewelery = 'jewelery',
+  Electronics = 'electronics',
 }
